@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HW7</string>
+    <string-array name="gender_array">
+        <item>Select a Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+</resources>

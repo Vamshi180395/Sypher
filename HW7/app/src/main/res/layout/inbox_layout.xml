@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/isendername"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/ireplyimage"
+        android:layout_toStartOf="@+id/ireplyimage"
+        android:layout_alignBottom="@+id/ireplyimage"
+        android:layout_marginBottom="-20dp"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/ideleteimage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/delete" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/ireplyimage"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/ideleteimage"
+        android:layout_toStartOf="@+id/ideleteimage"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/reply" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/itxtmsg"
+        android:layout_below="@+id/isendername"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:layout_alignRight="@+id/ireplyimage"
+        android:layout_alignEnd="@+id/ireplyimage"
+        android:layout_alignBottom="@+id/view" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        android:layout_marginTop="80dp"
+        android:id="@+id/view" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView5"
+        android:layout_below="@+id/sendername"
+        android:layout_alignBottom="@+id/itxtmsg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/dateandtime"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_alignRight="@+id/ideleteimage"
+        android:layout_alignEnd="@+id/ideleteimage"
+        android:layout_marginRight="-20dp"/>
+</RelativeLayout>
